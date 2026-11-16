@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This is the build script used by cargo run
+# This is the build/launch script used by cargo run
 set -e
 
 KERNEL_BIN="$1"
