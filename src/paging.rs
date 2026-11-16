@@ -168,7 +168,7 @@ impl<'a> OffsetPageTable<'a> {
         "tlbi vaae1is, {va}",
         "dsb ish",
         "isb",
-        va = in(reg) (virt_addr >> 12),
+        va = in(reg) virt_addr >> 12,
         );
 
         (virt_addr + offset_in_page) as *mut u8
